@@ -1,0 +1,5 @@
+nome = str(input("(-1 = não existe SILVA no nome) \nDigite um nome: ")).strip()
+print('SILVA' in nome.upper())
+print("\033[2;31;44m=" * 20,"\033[m")
+cidade = str(input("(-1 = Não existe 'SANTO' no nome) \nDigite o nome de uma cidade/município: ")).strip()
+print(cidade[:5].upper() == 'SANTO')
