@@ -4,3 +4,4 @@ pygame.mixer.music.load('NOOOOOOOOOSSAAAAAAAAA.mp3')
 pygame.mixer.music.play()
 input()
 pygame.event.wait()
+
