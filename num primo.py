@@ -1,6 +1,7 @@
 print("\033[7m NÚMERO PRIMO\033[m")
 num = int(input("Digite um número: "))
 tot = 0
+
 for p in range(1, num + 1):
     if num % p == 0:
         print("\033[32m", end='')

@@ -9,3 +9,4 @@ if inverso == junto:
     print("O palíndromo de sua frase é igual a: \033[35m", inverso, '\033[m')
 else:
     print("E ela \033[31mnão\033[m é um palíndromo!")
+
