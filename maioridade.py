@@ -4,6 +4,7 @@ atual = date.today().year
 soma = 0
 soma2 = 0
 
+
 for m in range(0,3):
     ano = int(input(f"Digite o ano de nascimento da {m+1}ª pessoa: "))
     idade = atual - ano
