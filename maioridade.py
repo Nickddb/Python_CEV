@@ -16,12 +16,12 @@ if maior == 1:
     print("1 pessoa atingiu a maioridade.")
 if maior > 1:
     print(maior, "pessoas atingiram a maioridade.")
-else:
+if menor == 0:
    print("Ninguém atingiu a maioridade.")
 
 if menor == 1:
     print(" 1 pessoa não atingiu a maioridade.")
 if menor > 1:
     print(menor, "pessoas não atingiram a maioridade.")
-else: 
+if menor == 0: 
     print("Ninguém faltou atingir a maioridade")
