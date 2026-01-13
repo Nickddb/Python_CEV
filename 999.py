@@ -1,0 +1,1 @@
+#ler n num e parar qnd escrever 999. No final mostrar a soma deles e quantos num foram digitados.

@@ -1,16 +1,22 @@
-#Escreva um programa que faça o computador pensar
-#em um num inteiro entre 0 e 5 e peça para o usuário tentar
-#descobrir qual foi o num escolhido pelo computador. O programa deverá escrever na tela se o usuário venceu ou perdeu
-
 from random import randint
+compiuter = randint(0,10)
+print("\033[42mJOGUINHO DE ADIVINHAÇÃO\033[m \nAdivinhe um número entre \033[1;34m0\033[m e \033[1;34m10\033[m")
 
-compiuter = randint(0,5)
-print("JOGUINHO DE ADIVINHAÇÃO \nAdivinhe um número entre 0 e 5")
-jogador = int(input("O computador pensou em um número. Digite qual número ele pensou: "))
+contador = 0
+acerto = False
 
-if jogador == compiuter:
-    print("\033[1;32mParabéns! Você acertou!\033[m")
-elif jogador > 5 or jogador < 0:
-    print("\033[7mEu falei pra escolher um número entre 0 e 5 apenas!\033[m")
-elif jogador != compiuter:
-    print("\033[1;31mErrou! :(\033[m o computador pensou no número \033[4;32m{}\033[m e não no número \033[4;36m{}\033[m. \nTente novamente!".format(compiuter, jogador))
+while not acerto:
+    jogador = int(input("O computador pensou em um número. Digite qual número ele pensou: "))
+    contador += 1
+    if jogador == compiuter:
+        print("\033[1;32mParabéns! Você acertou!\033[m")
+        print("Quantidade de palpites: ", contador)
+        break
+    elif jogador > 10 or jogador < 0:
+        print("\033[7mEu falei pra escolher um número entre 0 e 10 apenas!\033[m")
+        jogador = int(input("\nO computador pensou em um número. Digite qual número ele pensou: "))
+    else:
+        if jogador < compiuter:
+            print("\033[1;32mMais...\033[m tente novamente")
+        elif jogador > compiuter:
+            print("\033[1;31mMenos...\033[m tente novamente")

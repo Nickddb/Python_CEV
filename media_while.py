@@ -1,0 +1,1 @@
+#além da média dos n valores lidos, mostrar o maior e o menor num. Perguntar pro user se ele quer continuar ou não.
