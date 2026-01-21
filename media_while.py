@@ -6,7 +6,7 @@ num2 = int(input("Digite outro número: "))
 escolha = int(input("\nDeseja continuar?\n\033[4m0- Não\033[m\n\033[4m1- Sim\033[m\n"))
 while escolha != 0:
     num3 = int(input("Digite o {}º número: ".format(cont + 1)))
-    soma += num3 + num1 + num2
+    soma = num3 + num1 + num2
     cont += 1
     if escolha == 0:
         soma = num1 + num2
@@ -20,7 +20,7 @@ if num1 > num2 and num1 > num3 :
     print("\033[2;34m",num1,"\033[m é o maior número e", end=' ')
 elif num2 > num1 and num2 > num3:
     print("\033[2;34m", num2, "\033[m é o maior número e", end=' ')
-elif num3 > num1 and num3 > num2:
+else:
     print("\033[2;34m", num3, "\033[m é o maior número e", end=' ')
 if num1 < num2 and num1 < num3:
     print("\033[2;35m", num1, "\033[m é o menor número")
