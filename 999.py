@@ -1,5 +1,5 @@
 print("\033[45mSAFE WORD\033[m")
-num = cont = soma = 0
+cont = soma = 0
 num = int(input("Digite um número [999 p/ parar]: "))
 while num != 999:
     cont += 1
