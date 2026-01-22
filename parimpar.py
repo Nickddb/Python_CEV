@@ -24,5 +24,3 @@ while True:
             False
             break
 print(f"Quantidade de partidas ganhas: {cont}\n")
-
-
